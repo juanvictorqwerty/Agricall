@@ -17,7 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path ,include
 
+from agricall import views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('agricall/', include('agricall.urls')),
+    path('', views.say_hello, name='say_hello'),  # Added route for the empty path
+    
 ]

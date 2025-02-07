@@ -3,5 +3,5 @@ from . import views
 
 #URLconfiguration
 urlpatterns = [
-    path('', views.say_hello, name='say_hello'),
+    path('agricall/', views.say_hello, name='say_hello'),
 ]
