@@ -21,6 +21,6 @@ from agricall import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.say_hello, name='say_hello'),  # Added route for the empty path
+    path('', views.welcome_user, name='say_hello'),  # Added route for the empty path
     
 ]

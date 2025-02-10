@@ -4,5 +4,5 @@ from django.http import HttpResponse
 # Create your views here.
 #request handler part
 
-def say_hello(request):
-    return render(request,'hello.html')
+def welcome_user(request):
+    return render(request,'index.html')

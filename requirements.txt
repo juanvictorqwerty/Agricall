@@ -1,0 +1,6 @@
+asgiref @ file:///croot/asgiref_1724072470684/work
+Django @ file:///croot/django_1731615954020/work
+pillow @ file:///croot/pillow_1738010226202/work
+setuptools==75.8.0
+sqlparse @ file:///croot/sqlparse_1734704446487/work
+wheel==0.45.1
