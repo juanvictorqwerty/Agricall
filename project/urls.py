@@ -18,9 +18,14 @@ from django.contrib import admin
 from django.urls import path ,include
 
 from agricall import views
+from project import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.welcome_user, name='say_hello'),  # Added route for the empty path
-    
+    path('store/', views.show_products, name='show_products'),  # Added route for the store path
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
