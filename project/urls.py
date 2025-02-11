@@ -25,6 +25,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.welcome_user, name='say_hello'),  # Added route for the empty path
     path('store/', views.show_products, name='show_products'),  # Added route for the store path
+    path('create_product/',views.CreateProduct.as_view(),name='create_product'),
 ]
 
 if settings.DEBUG:
