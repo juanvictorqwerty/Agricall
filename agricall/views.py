@@ -20,20 +20,6 @@ def show_products(request):
     }
     return render(request,'store.html',context)
 
-#class CreateProduct(View):
-
-#    def get(self ,request,*args,**kwargs):
-#        return render(request,'Folders/create_product.html')
-#    def post(self,request,*args,**kwargs):
-#        name = request.POST.get('name')
-#        description = request.POST.get('description')
-#        price = request.POST.get('price')
-#       image = request.FILES.get('image')
-
-#        products = Products.objects.create(name=name ,description=description ,price=price,image=image)
-#        products.save()
-
-#        return HttpResponse("Product successfully inserted")
 
 class CreateProduct(View):
     def get(self,request,*args,**kwargs):
