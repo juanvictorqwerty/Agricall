@@ -11,3 +11,8 @@ class Products(models.Model):
 
     def __str__(self):
         return self.name
+    
+    def get_image_url(self): #putting an error handler
+        if self.image:
+            return self.image.url
+        return None
